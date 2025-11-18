@@ -1,0 +1,15 @@
+{
+  "name": "url-trust-checker",
+  "version": "2.0.0",
+  "description": "Professional URL security analysis platform",
+  "scripts": {
+    "install-all": "cd backend && npm install && cd ../client && npm install",
+    "backend": "cd backend && npm start",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "dev": "concurrently \"npm run backend\" \"npm run client\""
+  },
+  "keywords": ["url", "security", "phishing", "checker", "react"],
+  "author": "",
+  "license": "ISC"
+}
