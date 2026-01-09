@@ -1,6 +1,6 @@
 # 🛡️ ZeroPhishing – URL Trust Checker
 
-A full-featured, production-ready React web application that analyzes URLs for security threats using Google Safe Browsing API and advanced heuristic analysis. Features a modern, responsive interface with real-time threat detection, detailed analytics, and comprehensive reporting.
+A full-featured, production-ready React web application that analyzes URLs for security threats using Google Safe Browsing API and advanced heuristic analysis.  Features a modern, responsive interface with real-time analysis and detailed reporting.
 
 ![Status](https://img.shields.io/badge/status-production--ready-brightgreen)
 ![Node.js](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen)
@@ -11,34 +11,32 @@ A full-featured, production-ready React web application that analyzes URLs for s
 
 ## 👀 Screenshots
 
-Place the following images under `docs/images/` in the repository, using these exact filenames. Once added, the screenshots will render automatically.
+### Home Screen
+The main interface where users can input URLs for security analysis.
 
-- UI – Home page (URL input and analysis)
-- Real-time analysis result with verdict and risk score
-- Risk score visualization (0–100)
-- History view with previously checked URLs
-- Report export (PDF/CSV)
-- Architecture overview diagram
+![Home Screen](HomeScreen.png)
 
-| Home | Analysis Result | Risk Score |
-|---|---|---|
-| ![Home UI](docs/images/ui-home.png) | ![Analysis Result](docs/images/ui-analysis.png) | ![Risk Score](docs/images/ui-risk-score.png) |
+### Detection Results
+Real-time analysis results with verdict and detailed risk assessment.
 
-| History | Report Export | Architecture |
-|---|---|---|
-| ![History View](docs/images/ui-history.png) | ![Report Export](docs/images/ui-report.png) | ![Architecture Diagram](docs/images/architecture.png) |
+| Detection Overview | Detailed Analysis |
+|---|---|
+| ![Detection Screen](DetectionScreen.png) | ![More Detection Details](MoreDetectionScreen.png) |
 
-Optional demo GIF:
-![Demo](docs/images/demo.gif)
+### How It Works
+Learn about the analysis methodology and security checks performed.
 
-Suggested file list to add:
-- `docs/images/ui-home.png`
-- `docs/images/ui-analysis.png`
-- `docs/images/ui-risk-score.png`
-- `docs/images/ui-history.png`
-- `docs/images/ui-report.png`
-- `docs/images/architecture.png`
-- `docs/images/demo.gif` (optional)
+![How It Works](HowScreen.png)
+
+### Benefits
+Discover the advantages of using ZeroPhishing for URL security. 
+
+![Benefits](BenefitsScreen. png)
+
+### History
+View previously checked URLs and their analysis results.
+
+![History Screen](HistoryScreen.png)
 
 ---
 
@@ -64,7 +62,7 @@ Suggested file list to add:
 - Robust error handling
 
 ### Security Analysis
-- Risk Score 0–100 with clear verdicts:
+- Risk Score 0–100 with clear verdicts: 
   - Safe (0–29)
   - Suspicious (30–69)
   - Phishing (70–100)
@@ -75,8 +73,7 @@ Suggested file list to add:
 
 ## 🏗️ Architecture Overview
 
-High-level flow:
-![Architecture](docs/images/architecture.png)
+High-level flow: 
 
 1. Client (React) sends URL to backend (`/api/check`)
 2. Backend queries Google Safe Browsing
@@ -96,19 +93,19 @@ High-level flow:
 
 ### Installation
 
-Clone the repo:
+Clone the repo: 
 ```bash
-git clone https://github.com/b1l4l-sec/ZeroPhishing.git
+git clone https://github.com/b1l4l-sec/ZeroPhishing. git
 cd ZeroPhishing
 ```
 
-Install backend:
+Install backend: 
 ```bash
 cd backend
 npm install
 # optional: additional libraries (if not already present)
 npm install pdfkit json2csv fs-extra
-cp .env.example .env
+cp .env.example . env
 ```
 
 Edit `.env`:
@@ -180,7 +177,7 @@ Example response:
 {
   "url": "https://example.com",
   "verdict": "safe",
-  "score": 0.0,
+  "score": 0. 0,
   "reasons": ["No suspicious patterns detected"],
   "checkedAt": "2025-10-31T12:00:00.000Z",
   "cached": false
@@ -196,19 +193,17 @@ ZeroPhishing/
 ├─ backend/
 │  ├─ src/
 │  ├─ package.json
-│  └─ .env
+│  └─ . env
 ├─ client/
 │  ├─ src/
 │  └─ package.json
-└─ docs/
-   └─ images/
-      ├─ ui-home.png
-      ├─ ui-analysis.png
-      ├─ ui-risk-score.png
-      ├─ ui-history.png
-      ├─ ui-report.png
-      ├─ architecture.png
-      └─ demo.gif
+├─ HomeScreen.png
+├─ DetectionScreen.png
+├─ MoreDetectionScreen.png
+├─ HistoryScreen.png
+├─ HowScreen.png
+├─ BenefitsScreen.png
+└─ README.md
 ```
 
 ---
@@ -216,13 +211,12 @@ ZeroPhishing/
 ## 🤝 Contributing
 
 - Fork the repo and create a feature branch
-- Ensure screenshots are added under `docs/images/`
 - Submit a Pull Request with a clear description and visuals
 
 ---
 
 ## 📜 License
 
-This project is licensed under the MIT License. See `LICENSE` for details.
+This project is licensed under the MIT License.  See `LICENSE` for details.
 
 ---
